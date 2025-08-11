@@ -1,0 +1,4 @@
+key_teleop:
+  ros__parameters:
+    linear.x: 0.08
+    angular.z: 0.4

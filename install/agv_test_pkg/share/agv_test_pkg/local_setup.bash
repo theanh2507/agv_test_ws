@@ -1,0 +1,1 @@
+/home/theanh/agv_test_ws/build/agv_test_pkg/ament_cmake_environment_hooks/local_setup.bash

@@ -1,0 +1,50 @@
+[0.013s] Invoking command in '/home/theanh/agv_test_ws/build/agv_test_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theanh/mobile_rb_ws/install/nav2_gps_waypoint_follower_demo:/home/theanh/ros2_ws/install/actions_py:/home/theanh/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/theanh/agv_test_ws/build/agv_test_pkg -- -j16 -l16
+[0.048s] Invoked command in '/home/theanh/agv_test_ws/build/agv_test_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theanh/mobile_rb_ws/install/nav2_gps_waypoint_follower_demo:/home/theanh/ros2_ws/install/actions_py:/home/theanh/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/theanh/agv_test_ws/build/agv_test_pkg -- -j16 -l16
+[0.057s] Invoking command in '/home/theanh/agv_test_ws/build/agv_test_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theanh/mobile_rb_ws/install/nav2_gps_waypoint_follower_demo:/home/theanh/ros2_ws/install/actions_py:/home/theanh/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/theanh/agv_test_ws/build/agv_test_pkg
+[0.062s] -- Install configuration: ""
+[0.063s] -- Execute custom install script
+[0.063s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/launch/launch_python_file.launch.py
+[0.070s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/launch/launch_sim.launch.py
+[0.078s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/launch/localization_launch.py
+[0.084s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/launch/navigation_launch.py
+[0.091s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/launch/online_async_launch.py
+[0.098s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/config/key_teleop_vel.yaml
+[0.105s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/config/mapper_params_online_async.yaml
+[0.113s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/config/nav2_params.yaml
+[0.120s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/config/waypoint_follow.yaml
+[0.127s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/rviz/agv.rviz
+[0.135s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/lib/agv_test_pkg/lidar.py
+[0.142s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/lib/agv_test_pkg/odom_tf_pub.py
+[0.149s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/lib/agv_test_pkg/caculate_position.py
+[0.156s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/lib/agv_test_pkg/cmd_vel_mux.py
+[0.163s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/lib/agv_test_pkg/multiple_point.py
+[0.170s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/lib/agv_test_pkg/waypoint.py
+[0.177s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/Ems_Link.STL
+[0.184s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/base_link.STL
+[0.191s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/hmi_Link.STL
+[0.199s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/left_sensor_Link.STL
+[0.205s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/lidar_Link.STL
+[0.212s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/light_green_Link.STL
+[0.219s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/light_left_Link.STL
+[0.226s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/light_red_Link.STL
+[0.234s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/light_right_Link.STL
+[0.241s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/right_sensor_Link.STL
+[0.248s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/wheel_left_Link.STL
+[0.255s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/meshes/wheel_right_Link.STL
+[0.262s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/description/urdf/agv_assem.urdf
+[0.269s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/ament_index/resource_index/package_run_dependencies/agv_test_pkg
+[0.276s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/ament_index/resource_index/parent_prefix_path/agv_test_pkg
+[0.284s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/environment/ament_prefix_path.sh
+[0.291s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/environment/ament_prefix_path.dsv
+[0.298s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/environment/path.sh
+[0.306s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/environment/path.dsv
+[0.313s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/local_setup.bash
+[0.321s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/local_setup.sh
+[0.328s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/local_setup.zsh
+[0.336s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/local_setup.dsv
+[0.343s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/package.dsv
+[0.352s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/ament_index/resource_index/packages/agv_test_pkg
+[0.360s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/cmake/agv_test_pkgConfig.cmake
+[0.368s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/cmake/agv_test_pkgConfig-version.cmake
+[0.376s] -- Symlinking: /home/theanh/agv_test_ws/install/agv_test_pkg/share/agv_test_pkg/package.xml
+[0.387s] Invoked command in '/home/theanh/agv_test_ws/build/agv_test_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theanh/mobile_rb_ws/install/nav2_gps_waypoint_follower_demo:/home/theanh/ros2_ws/install/actions_py:/home/theanh/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/theanh/agv_test_ws/build/agv_test_pkg

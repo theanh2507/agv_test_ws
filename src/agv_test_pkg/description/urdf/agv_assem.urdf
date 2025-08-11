@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="agv_assem">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.003602847707108 0.000130844455951018 0.127249612852876"
+        rpy="0 0 0" />
+      <mass
+        value="42.4028852930191" />
+      <inertia
+        ixx="0.759425624440252"
+        ixy="0.00271375958593301"
+        ixz="0.0325400880987379"
+        iyy="0.814823846995604"
+        iyz="0.00111577643788778"
+        izz="1.13095142038145" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="light_right_Link">
+    <inertial>
+      <origin
+        xyz="-0.0100533068027234 0 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0140586734391995" />
+      <inertia
+        ixx="1.57377372624532E-06"
+        ixy="-4.33565263313772E-23"
+        ixz="-1.24192442151822E-23"
+        iyy="1.25091949838079E-06"
+        iyz="8.10637000301969E-23"
+        izz="1.25091949838079E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/light_right_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/light_right_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="light_right_joint"
+    type="fixed">
+    <origin
+      xyz="0.2356 -0.145 0.08"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="light_right_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="light_left_Link">
+    <inertial>
+      <origin
+        xyz="-0.0100533068027233 0 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0140586734391995" />
+      <inertia
+        ixx="1.57377372624532E-06"
+        ixy="5.94340099859327E-23"
+        ixz="-1.10423137804719E-22"
+        iyy="1.25091949838079E-06"
+        iyz="-1.54407047676565E-23"
+        izz="1.25091949838079E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/light_left_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/light_left_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="light_left_joint"
+    type="fixed">
+    <origin
+      xyz="0.235604738154613 0.145 0.08"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="light_left_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_sensor_Link">
+    <inertial>
+      <origin
+        xyz="-0.032811 1.2667E-05 -8.5015E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.013952" />
+      <inertia
+        ixx="4.7438E-07"
+        ixy="6.5948E-09"
+        ixz="-4.4273E-09"
+        iyy="5.3269E-06"
+        iyz="9.0475E-10"
+        izz="5.3277E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/right_sensor_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/right_sensor_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_sensor_Joint"
+    type="fixed">
+    <origin
+      xyz="0.2306 -0.145 0.05"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_sensor_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_sensor_Link">
+    <inertial>
+      <origin
+        xyz="-0.0328105697431102 1.26673801277288E-05 -8.50150928924376E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0139523045455571" />
+      <inertia
+        ixx="4.74382448415946E-07"
+        ixy="6.5947879333403E-09"
+        ixz="-4.42734461183002E-09"
+        iyy="5.32691456787383E-06"
+        iyz="9.04753056613216E-10"
+        izz="5.3276569480855E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/left_sensor_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/left_sensor_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_sensor_joint"
+    type="fixed">
+    <origin
+      xyz="0.230604738154614 0.145 0.0499999999999999"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_sensor_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Ems_Link">
+    <inertial>
+      <origin
+        xyz="-0.026612796457508 1.03549495500399E-06 -0.0266127724462983"
+        rpy="0 0 0" />
+      <mass
+        value="0.0557914721292887" />
+      <inertia
+        ixx="1.64975848299029E-05"
+        ixy="-9.28255172098563E-10"
+        ixz="-8.75203499986633E-06"
+        iyy="2.67243120127267E-05"
+        iyz="-9.29392054765467E-10"
+        izz="1.6497587411941E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/Ems_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/Ems_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Ems_joint"
+    type="fixed">
+    <origin
+      xyz="0.166978144590389 0.144999819554607 0.265811074015791"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Ems_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="light_red_Link">
+    <inertial>
+      <origin
+        xyz="-0.0229378061062133 -1.11022302462516E-16 -0.0229378061062133"
+        rpy="0 0 0" />
+      <mass
+        value="0.0467734874031033" />
+      <inertia
+        ixx="7.09713172129787E-06"
+        ixy="1.00838968330617E-09"
+        ixz="-7.06907204816942E-07"
+        iyy="9.28196219051791E-06"
+        iyz="-1.21665870553771E-08"
+        izz="7.12336158832809E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/light_red_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/light_red_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="light_red_joint"
+    type="fixed">
+    <origin
+      xyz="0.19069 0.145 0.22583"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="light_red_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="light_green_Link">
+    <inertial>
+      <origin
+        xyz="-0.022938 0 -0.022938"
+        rpy="0 0 0" />
+      <mass
+        value="0.046773" />
+      <inertia
+        ixx="7.0971E-06"
+        ixy="1.0084E-09"
+        ixz="-7.0691E-07"
+        iyy="9.282E-06"
+        iyz="-1.2167E-08"
+        izz="7.1234E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/light_green_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/light_green_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="light_green_joint"
+    type="fixed">
+    <origin
+      xyz="0.222511636309433 0.145 0.194014126329457"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="light_green_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="hmi_Link">
+    <inertial>
+      <origin
+        xyz="-0.01301 4.2995E-08 -0.01301"
+        rpy="0 0 0" />
+      <mass
+        value="0.38753" />
+      <inertia
+        ixx="0.00067561"
+        ixy="-2.4013E-10"
+        ixz="7.684E-05"
+        iyy="0.00024877"
+        iyz="-1.9375E-10"
+        izz="0.00067561" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/hmi_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/hmi_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hmi_joint"
+    type="fixed">
+    <origin
+      xyz="0.174628175739565 0 0.21409414826307"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="hmi_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar_Link">
+    <inertial>
+      <origin
+        xyz="0.000858144927673769 -9.65393265328629E-10 -0.0228829468571324"
+        rpy="0 0 0" />
+      <mass
+        value="0.200330166432565" />
+      <inertia
+        ixx="0.000136298026591266"
+        ixy="-1.1695689491203E-11"
+        ixz="1.96010827588982E-06"
+        iyy="0.000135855125817153"
+        iyz="6.81503487402818E-12"
+        izz="9.68028162269396E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/lidar_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/lidar_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0.0387780436521716 0 0.314444444444445"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel_right_Link">
+    <inertial>
+      <origin
+        xyz="8.23993651088983E-18 0.0125000000000001 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.279915905434851" />
+      <inertia
+        ixx="0.000269022511448345"
+        ixy="7.87280571226036E-21"
+        ixz="1.27850672604491E-20"
+        iyy="0.000508887116080559"
+        iyz="-1.18426145993989E-20"
+        izz="0.000269022511448345" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/wheel_right_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/wheel_right_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_right_joint"
+    type="continuous">
+    <origin
+      xyz="0.080605 -0.17 0.025"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_right_Link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="wheel_left_Link">
+    <inertial>
+      <origin
+        xyz="8.67361737988404E-18 -0.0125 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.279915905434851" />
+      <inertia
+        ixx="0.000269022511448345"
+        ixy="1.25682816002892E-20"
+        ixz="1.86608930429313E-20"
+        iyy="0.000508887116080559"
+        iyz="-3.27307248762884E-22"
+        izz="0.000269022511448345" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/wheel_left_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find agv_test_pkg)/description/meshes/wheel_left_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_left_joint"
+    type="continuous">
+    <origin
+      xyz="0.080605 0.17 0.025"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_left_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
