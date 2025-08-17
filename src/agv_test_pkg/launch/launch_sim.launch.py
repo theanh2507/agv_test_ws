@@ -25,7 +25,7 @@ def generate_launch_description():
     params = {'robot_description': robot_description_config.toxml(), 'use_sim_time': use_sim_time}
 
 
-    # Launch Gazebo
+    # Launch Gazeboc
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
